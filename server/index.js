@@ -23,14 +23,13 @@ let databaseconnection = mysql.createPool({
 console.log("HOST:", process.env.MYSQL_HOST);
 console.log("DB:", process.env.MYSQL_DATABASE);
 
-databaseconnection.connect(function (error) {
+databaseconnection.query("SELECT 1", (error) => {
     if (error) {
-        console.log(error)
+        console.log(error);
+    } else {
+        console.log("database connected");
     }
-    else {
-        console.log("database connected")
-    }
-})
+});
 
 connect.get("/", (req, res) => {
     res.send("Learner Backend Running");
