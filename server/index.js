@@ -18,6 +18,9 @@ let databaseconnection = mysql.createConnection({
     database: process.env.MYSQLDATABASE
 })
 
+console.log("HOST:", process.env.MYSQLHOST);
+console.log("DB:", process.env.MYSQLDATABASE);
+
 databaseconnection.connect(function (error) {
     if (error) {
         console.log(error)
