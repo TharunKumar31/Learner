@@ -5,12 +5,14 @@ const cors = require("cors")
 const bodyparser = require("body-parser")
 const mysql = require("mysql2")
 const connect = express()
-connect.use(cors())
+connect.use(cors({
+    origin: "*"
+}))
 connect.use(bodyparser.json())
 connect.use(express.json())
 connect.use(express.static('public'))
 connect.use(bodyparser.urlencoded({ extended: true }))
-let databaseconnection = mysql.createConnection({
+let databaseconnection = mysql.createPool({
     host: process.env.MYSQL_HOST,
     port: process.env.MYSQL_PORT,
     user: process.env.MYSQL_USER,
