@@ -18,7 +18,7 @@ export function Enroll() {
     const [learn, setLearn] = useState('')
 
     useEffect(() => {
-        fetch("http://localhost:5831/enroll/" + id)
+        fetch("https://learner-production-a680.up.railway.app/enroll/" + id)
             .then(res => res.json())
             .then((data) => {
                 setFname(data[0].fname)
@@ -85,7 +85,7 @@ export function Enroll() {
         }
 
         else {
-            axios.post("http://localhost:5831/enroll/", key)
+            axios.post("https://learner-production-a680.up.railway.app/enroll/", key)
                 .then((upddet) => {
                     if (upddet.data.status === 'error') {
                         alert(upddet)
