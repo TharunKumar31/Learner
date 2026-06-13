@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 export function EnrollDetails() {
     const [enrolllist,setEnrollDetails]=useState([]);
     useEffect(() => {
-        fetch("http://localhost:5831/enrolldetails")
+        fetch("https://learner-production-a680.up.railway.app/enrolldetails")
         .then(storedata => storedata.json())
         .then(enrolllistdata => setEnrollDetails(enrolllistdata))
     })
     const del=(id)=>{
         var key={id:id}
-        axios.post("http://localhost:5831/delete/",key)
+        axios.post("https://learner-production-a680.up.railway.app/delete/",key)
         .then((res)=>{
             if(res.data.status==="error"){
                 alert("data not deleted")

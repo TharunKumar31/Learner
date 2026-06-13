@@ -14,7 +14,7 @@ export function EnrollUpdate() {
     const [learn, setLearn] = useState('')
 
     useEffect(() => {
-        fetch("http://localhost:5831/singleenroll/" + id)
+        fetch("https://learner-production-a680.up.railway.app/singleenroll/" + id)
             .then(res => res.json())
             .then((data) => {
                 setFname(data[0].fname)
@@ -78,7 +78,7 @@ export function EnrollUpdate() {
         }
 
         else {
-            axios.put("http://localhost:5831/enrollupdate/" + id, key)
+            axios.put("https://learner-production-a680.up.railway.app/enrollupdate/" + id, key)
                 .then((upddet) => {
                     if (upddet.data.status === 'not_update') {
                         alert("data not updated")
