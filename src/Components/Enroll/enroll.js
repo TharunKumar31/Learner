@@ -105,32 +105,32 @@ export function Enroll() {
     return (
         <>
             <div className="enroll">
-                <nav class="navbar navbar-expand-lg p-3 sticky-top" id="navbar" >
-                    <div class="container">
-                        <a class="navbar-brand navbarbrand" href="#">Learner<div></div></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg p-3 sticky-top" id="navbar" >
+                    <div className="container">
+                        <a className="navbar-brand navbarbrand" href="#">Learner<div></div></a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active navlink1" aria-current="page" href="/">Home</a>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link active navlink1" aria-current="page" href="/">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="/about">About</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/about">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link navlink1" href="/courses">Courses</a>
+                                <li className="nav-item">
+                                    <a className="nav-link navlink1" href="/courses">Courses</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link navlink1" href="/instructor">Instructors</a>
+                                <li className="nav-item">
+                                    <a className="nav-link navlink1" href="/instructor">Instructors</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         More Pages
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a className="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -142,22 +142,22 @@ export function Enroll() {
                 </nav>
 
                 <div>
-                    <nav class="navbar navbar-expand-lg p-3" id="abouthom">
-                        <div class="container">
-                            <a class="navbar-brand navbarbrand1" href="#">Enrollment</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                    <nav className="navbar navbar-expand-lg p-3" id="abouthom">
+                        <div className="container">
+                            <a className="navbar-brand navbarbrand1" href="#">Enrollment</a>
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse navbarlin" id="navbarSupportedContent">
-                                <ul class="navbar-nav mb-2 mb-lg-0 ">
-                                    <li class="nav-item">
-                                        <a class="nav-link navlink2" aria-current="page" href="/">Home</a>
+                            <div className="collapse navbar-collapse navbarlin" id="navbarSupportedContent">
+                                <ul className="navbar-nav mb-2 mb-lg-0 ">
+                                    <li className="nav-item">
+                                        <a className="nav-link navlink2" aria-current="page" href="/">Home</a>
                                     </li>
                                     <li>
                                         <p className="nav-link">/</p>
                                     </li>
                                     <li>
-                                        <a class="nav-link">Enroll</a>
+                                        <a className="nav-link">Enroll</a>
                                     </li>
                                 </ul>
                             </div>
@@ -174,22 +174,22 @@ export function Enroll() {
                     </div>
                     <form onSubmit={enroll}>
                         <div className="row mt-5">
-                            <div className="col ms-4">
+                            <div className="col-lg-6 col-md-6 col-12 mb-3">
                                 <label>First Name*</label>
                                 <input type="text" className="form-control" id="fname" />
                                 <label className="mt-4">Email Address*</label>
                                 <input type="text" className="form-control" id="email" />
                             </div>
-                            <div className="col me-4">
+                            <div className="col-lg-6 col-md-6 col-12 mb-3">
                                 <label>Last Name*</label>
                                 <input type="text" className="form-control" id="lname" />
                                 <label className="mt-4">Phone Number*</label>
                                 <input type="text" className="form-control" id="phoneno" />
                             </div>
                         </div>
-                        <div className="ms-4 me-4">
+                        <div className="px-3">
                             <label className="mt-4">Select Course *</label>
-                            <div class="col-auto">
+                            <div className="col-auto">
                                 <select className="form-select" id="selectcourse">
                                     <option>Choose a course...</option>
                                     <option>Full Stack Web Development</option>
@@ -202,7 +202,7 @@ export function Enroll() {
                             </div>
                         </div>
                         <div className="row mt-4">
-                            <div className="col ms-4">
+                            <div className="col-lg-6 col-md-6 col-12 mb-3">
                                 <label>Education Level</label>
                                 <select className="form-select" id="education">
                                     <option>Select your education level...</option>
@@ -215,7 +215,7 @@ export function Enroll() {
 
                                 </select>
                             </div>
-                            <div className="col me-4">
+                            <div className="col-lg-6 col-md-6 col-12 mb-3">
                                 <label>Experience Level</label>
                                 <select className="form-select" id="experience">
                                     <option>Select your experience...</option>
@@ -256,7 +256,7 @@ export function Enroll() {
                     <footer className="container">
                         <div className="">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-lg-6 col-md-12 col-12 mb-4">
                                     <p className="navbarbrand">Learner</p>
                                     <p className="leaknow">A learner is someone who actively seeks knowledge, skills, or understanding through study or experience.They embrace curiosity and growth, continuously evolving through education and practice.</p>
                                     <div className="d-flex">
@@ -266,7 +266,7 @@ export function Enroll() {
                                         <p className="iconfoot ms-3"><FontAwesomeIcon icon={faLinkedin} className="ms-3" /></p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Useful Links</p>
                                     <div className="linkuse">
                                         <p>Home</p>
@@ -276,7 +276,7 @@ export function Enroll() {
                                         <p>Privacy policy</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Our Services</p>
                                     <div className="linkuse">
                                         <p>Web Design</p>
@@ -286,7 +286,7 @@ export function Enroll() {
                                         <p>Graphic Design</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Contact Us</p>
                                     <div className="linkuse">
                                         <p>A108 Adam Street<br />New York, NY 535022<br />United States</p>

@@ -9,32 +9,32 @@ export function Home() {
     return (
         <>
             <div>
-                <nav class="navbar navbar-expand-lg p-3 sticky-top" id="navbar" >
-                    <div class="container">
-                        <a class="navbar-brand navbarbrand" href="#">Learner<div></div></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg p-3 sticky-top" id="navbar" >
+                    <div className="container">
+                        <a className="navbar-brand navbarbrand" href="#">Learner<div></div></a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active navlink1" aria-current="page" href="">Home</a>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link active navlink1" aria-current="page" href="">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="/about">About</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/about">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link navlink1" href="/courses">Courses</a>
+                                <li className="nav-item">
+                                    <a className="nav-link navlink1" href="/courses">Courses</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link navlink1" href="/instructor">Instructors</a>
+                                <li className="nav-item">
+                                    <a className="nav-link navlink1" href="/instructor">Instructors</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         More Pages
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a className="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -56,29 +56,31 @@ export function Home() {
                         <img src="https://media.licdn.com/dms/image/v2/C5612AQEbXcrYeAMStA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520171873000?e=2147483647&v=beta&t=uIp1dYdk3SarRTe9Mitwlai0ZAEIozy3GB-yRyjEaik" className="wallpaper" />
                     </div>
 
-                    <div class="card-img-overlay left">
-                        <h5 class="card-title transform">Transform Your Future<br />with Expert-Led Online<br />Courses</h5>
-                        <p class="card-text mt-4 discover">Discover thousands of high-quality courses designed by industry<br />professionals. Learn at your own pace, gain in-demand skills, and<br />advance your career from anywhere in the world.</p>
+                    <div className="card-img-overlay left">
+                        <h5 className="card-title transform">Transform Your Future<br />with Expert-Led Online<br />Courses</h5>
+                        <p className="card-text mt-4 discover">Discover thousands of high-quality courses designed by industry<br />professionals. Learn at your own pace, gain in-demand skills, and<br />advance your career from anywhere in the world.</p>
                         <div className="number mt-4">
                             <p className="card-text num">50000</p>
-                            <p className="card-text ms-4 num">1200</p>
-                            <p className="card-text ms-5 num">98</p>
+                            <p className="card-text num">1200</p>
+                            <p className="card-text num">98</p>
                         </div>
+
                         <div className="student">
                             <p className="card-text stu">Students Enrolled</p>
-                            <p className="card-text ms-4 stu">Expert Courses</p>
-                            <p className="card-text ms-4 stu">Success Rate %</p>
+                            <p className="card-text stu">Expert Courses</p>
+                            <p className="card-text stu">Success Rate %</p>
                         </div>
+
                         <div className="certified mt-5">
                             <p className="cert"><FontAwesomeIcon icon={faShield} size="lg" /> Certified Programs</p>
-                            <p className="cert ms-4"><FontAwesomeIcon icon={faClock} size="lg" />Lifetime Access</p>
-                            <p className="cert ms-4"><FontAwesomeIcon icon={faUserGroup} size="lg" /> Expert Instructors</p>
+                            <p className="cert"><FontAwesomeIcon icon={faClock} size="lg" /> Lifetime Access</p>
+                            <p className="cert"><FontAwesomeIcon icon={faUserGroup} size="lg" /> Expert Instructors</p>
                         </div>
                     </div>
 
                     <div className="card-img-overlay">
                         <div className="homeimg">
-                            <img src="https://images.pexels.com/photos/6285288/pexels-photo-6285288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img  rounded-5 " />
+                            <img src="https://images.pexels.com/photos/6285288/pexels-photo-6285288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="card-img  rounded-5 " />
                             <div className="card-img-overlay webui">
                                 <div className="web">
                                     <div className="icon1">
@@ -115,28 +117,28 @@ export function Home() {
                     {/* featured courses */}
 
                     <div className="container">
-                        <div class="featured">
-                            <div class="line line1"></div>
+                        <div className="featured">
+                            <div className="line line1"></div>
                             Featured Courses
-                            <div class="line line1"></div>
+                            <div className="line line1"></div>
                         </div>
                         <p className="master">Master in-demand skills with featured courses—all in one place</p>
                         <div className="imgcard">
                             <div className="row">
                                 <div className="col">
-                                    <div class="card border-light rounded-4 img1">
-                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/students-9.webp" class="card-img-top rounded-top-4" height={230} />
+                                    <div className="card border-light rounded-4 img1">
+                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/students-9.webp" className="card-img-top rounded-top-4" height={230} />
                                         <div className="card-img-overlay status">
                                             <p className="update">FEATURED</p>
                                             <p className="cash">$149</p>
                                         </div>
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <div className="begweek">
                                                 <p className="beginner ms-2">Beginner</p>
                                                 <p className="week">8 Weeks</p>
                                             </div>
-                                            <h5 class="card-title ms-2 cour">Digital Marketing Fundamentals</h5>
-                                            <p class="card-text ms-2">Learn the essentials of SEO, social media, email marketing, and more with Digital Marketing Fundamentals.</p>
+                                            <h5 className="card-title ms-2 cour">Digital Marketing Fundamentals</h5>
+                                            <p className="card-text ms-2">Learn the essentials of SEO, social media, email marketing, and more with Digital Marketing Fundamentals.</p>
                                             <div className="namimg">
                                                 <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/person/person-f-3.webp" className="rounded-5 mt-2 ms-2" height={40} />
                                                 <div className="ms-3">
@@ -170,19 +172,19 @@ export function Home() {
                                     </div>
                                 </div>
                                 <div className="col">
-                                    <div class="card border-light rounded-4 img1">
-                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/campus-4.webp" class="card-img-top rounded-top-4" height={230} />
+                                    <div className="card border-light rounded-4 img1">
+                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/campus-4.webp" className="card-img-top rounded-top-4" height={230} />
                                         <div className="card-img-overlay status">
                                             <p className="update">FEATURED</p>
                                             <p className="cash">$149</p>
                                         </div>
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <div className="begweek">
                                                 <p className="beginner ms-2">Beginner</p>
                                                 <p className="week">8 Weeks</p>
                                             </div>
-                                            <h5 class="card-title ms-2">Web Development with JavaScript</h5>
-                                            <p class="card-text ms-2">JavaScript enables dynamic, interactive web development for both front-end and back-end applications efficiently.</p>
+                                            <h5 className="card-title ms-2">Web Development with JavaScript</h5>
+                                            <p className="card-text ms-2">JavaScript enables dynamic, interactive web development for both front-end and back-end applications efficiently.</p>
                                             <div className="namimg">
                                                 <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/person/person-m-5.webp" className="rounded-5 mt-2 ms-2" height={40} />
                                                 <div className="ms-3">
@@ -216,19 +218,19 @@ export function Home() {
                                     </div>
                                 </div>
                                 <div className="col">
-                                    <div class="card border-light rounded-4 img1">
-                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/students-7.webp" class="card-img-top rounded-top-4" height={230} />
+                                    <div className="card border-light rounded-4 img1">
+                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/students-7.webp" className="card-img-top rounded-top-4" height={230} />
                                         <div className="card-img-overlay status">
                                             <p className="update">FEATURED</p>
                                             <p className="cash">$149</p>
                                         </div>
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <div className="begweek">
                                                 <p className="beginner ms-2">Beginner</p>
                                                 <p className="week ">8 Weeks</p>
                                             </div>
-                                            <h5 class="card-title ms-2">Introduction to Data Science</h5>
-                                            <p class="card-text ms-2">Data Science involves extracting insights from data using statistics, programming, and machine learning techniques.</p>
+                                            <h5 className="card-title ms-2">Introduction to Data Science</h5>
+                                            <p className="card-text ms-2">Data Science involves extracting insights from data using statistics, programming, and machine learning techniques.</p>
                                             <div className="namimg">
                                                 <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/person/person-f-7.webp" className="rounded-5 mt-2 ms-2" height={40} />
                                                 <div className="ms-3">
@@ -264,19 +266,19 @@ export function Home() {
 
                             <div className="row">
                                 <div className="col mt-5">
-                                    <div class="card border-light rounded-4 img1">
-                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/education-5.webp" class="card-img-top rounded-top-4" height={230} />
+                                    <div className="card border-light rounded-4 img1">
+                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/education-5.webp" className="card-img-top rounded-top-4" height={230} />
                                         <div className="card-img-overlay status">
                                             <p className="update">FEATURED</p>
                                             <p className="cash">$149</p>
                                         </div>
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <div className="begweek">
                                                 <p className="beginner ms-2">Beginner</p>
                                                 <p className="week">8 Weeks</p>
                                             </div>
-                                            <h5 class="card-title ms-2">Business Strategy & Leadership</h5>
-                                            <p class="card-text ms-2">Business Strategy & Leadership involves guiding organizations toward goals through planning, decision-making, and effective leadership.</p>
+                                            <h5 className="card-title ms-2">Business Strategy & Leadership</h5>
+                                            <p className="card-text ms-2">Business Strategy & Leadership involves guiding organizations toward goals through planning, decision-making, and effective leadership.</p>
                                             <div className="namimg">
                                                 <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/person/person-m-8.webp" className="rounded-5 mt-2 ms-2" height={40} />
                                                 <div className="ms-3">
@@ -310,19 +312,19 @@ export function Home() {
                                     </div>
                                 </div>
                                 <div className="col mt-5">
-                                    <div class="card border-light rounded-4 img1">
-                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/activities-3.webp" class="card-img-top rounded-top-4" height={230} />
+                                    <div className="card border-light rounded-4 img1">
+                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/activities-3.webp" className="card-img-top rounded-top-4" height={230} />
                                         <div className="card-img-overlay status">
                                             <p className="update">FEATURED</p>
                                             <p className="cash">$149</p>
                                         </div>
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <div className="begweek">
                                                 <p className="beginner ms-2">Beginner</p>
                                                 <p className="week">8 Weeks</p>
                                             </div>
-                                            <h5 class="card-title ms-2">Graphic Design Masterclass</h5>
-                                            <p class="card-text ms-2">Graphic Design Masterclass teaches visual communication skills using design principles, tools, and creative project techniques.</p>
+                                            <h5 className="card-title ms-2">Graphic Design Masterclass</h5>
+                                            <p className="card-text ms-2">Graphic Design Masterclass teaches visual communication skills using design principles, tools, and creative project techniques.</p>
                                             <div className="namimg">
                                                 <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/person/person-f-12.webp" className="rounded-5 mt-2 ms-2" height={40} />
                                                 <div className="ms-3">
@@ -356,19 +358,19 @@ export function Home() {
                                     </div>
                                 </div>
                                 <div className="col mt-5">
-                                    <div class="card border-light rounded-4 img1">
-                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-6.webp" class="card-img-top rounded-top-4" height={230} />
+                                    <div className="card border-light rounded-4 img1">
+                                        <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-6.webp" className="card-img-top rounded-top-4" height={230} />
                                         <div className="card-img-overlay status">
                                             <p className="update">FEATURED</p>
                                             <p className="cash">$149</p>
                                         </div>
-                                        <div class="card-body">
+                                        <div className="card-body">
                                             <div className="begweek">
                                                 <p className="beginner ms-2">Beginner</p>
                                                 <p className="week">8 Weeks</p>
                                             </div>
-                                            <h5 class="card-title ms-2">Photography for Beginners</h5>
-                                            <p class="card-text ms-2">Photography for Beginners teaches basic camera skills, composition, lighting, and techniques to capture better photos.</p>
+                                            <h5 className="card-title ms-2">Photography for Beginners</h5>
+                                            <p className="card-text ms-2">Photography for Beginners teaches basic camera skills, composition, lighting, and techniques to capture better photos.</p>
                                             <div className="namimg">
                                                 <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/person/person-m-11.webp" className="rounded-5 mt-2 ms-2" height={40} />
                                                 <div className="ms-3">
@@ -411,10 +413,10 @@ export function Home() {
                     {/* Course Categories */}
 
                     <div className="container coucat">
-                        <div class="featured">
-                            <div class="line line1"></div>
+                        <div className="featured">
+                            <div className="line line1"></div>
                             Course Categories
-                            <div class="line line1"></div>
+                            <div className="line line1"></div>
                         </div>
                         <p className="master">Explore a wide range of courses from programming, AI, and web development to business, design, and personal growth, empowering you with skills for today’s digital world.</p>
                         <div className="row mt-5">
@@ -553,19 +555,19 @@ export function Home() {
 
                     {/* featured instructors */}
                     <div className="container featinst">
-                        <div class="instructors">
-                            <div class="line line3"></div>
+                        <div className="instructors">
+                            <div className="line line3"></div>
                             Featured Instructors
-                            <div class="line line3"></div>
+                            <div className="line line3"></div>
                         </div>
                         <p className="master">Featured Instructors are expert educators highlighted for their exceptional teaching and industry experience.</p>
                         <div className="row mt-5">
                             <div className="col instfeat">
-                                <div class="card">
-                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-2.webp" class="card-img-top" />
-                                    <div class="card-body">
-                                        <h5 class="card-title trainer">Sarah Johnson</h5>
-                                        <p class="card-text trainercourse">Web Development</p>
+                                <div className="card">
+                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-2.webp" className="card-img-top" />
+                                    <div className="card-body">
+                                        <h5 className="card-title trainer">Sarah Johnson</h5>
+                                        <p className="card-text trainercourse">Web Development</p>
                                         <p className="card-text text-secondary fs-6">Web Development involves building and maintaining websites and web applications using coding, design, and technical tools.</p>
                                         <div className=" card-text d-flex studrate">
                                             <div className="text-center studcen">
@@ -588,11 +590,11 @@ export function Home() {
                                 </div>
                             </div>
                             <div className="col instfeat">
-                                <div class="card">
-                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-7.webp" class="card-img-top" />
-                                    <div class="card-body">
-                                        <h5 class="card-title trainer">Michael Chen</h5>
-                                        <p class="card-text trainercourse">Data Science</p>
+                                <div className="card">
+                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-7.webp" className="card-img-top" />
+                                    <div className="card-body">
+                                        <h5 className="card-title trainer">Michael Chen</h5>
+                                        <p className="card-text trainercourse">Data Science</p>
                                         <p className="card-text text-secondary fs-6">Data Science combines statistics, programming, and domain knowledge to extract insights and make data-driven decisions.</p>
                                         <div className=" card-text d-flex studrate">
                                             <div className="text-center studcen">
@@ -615,11 +617,11 @@ export function Home() {
                                 </div>
                             </div>
                             <div className="col instfeat">
-                                <div class="card">
-                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-4.webp" class="card-img-top" />
-                                    <div class="card-body">
-                                        <h5 class="card-title trainer">Amanda Rodriguez</h5>
-                                        <p class="card-text trainercourse">UX Design</p>
+                                <div className="card">
+                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-4.webp" className="card-img-top" />
+                                    <div className="card-body">
+                                        <h5 className="card-title trainer">Amanda Rodriguez</h5>
+                                        <p className="card-text trainercourse">UX Design</p>
                                         <p className="card-text text-secondary fs-6">UX Design focuses on creating meaningful and user-friendly experiences through intuitive and efficient product design.</p>
                                         <div className=" card-text d-flex studrate">
                                             <div className="text-center studcen">
@@ -642,11 +644,11 @@ export function Home() {
                                 </div>
                             </div>
                             <div className="col instfeat">
-                                <div class="card">
-                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-9.webp" class="card-img-top" />
-                                    <div class="card-body">
-                                        <h5 class="card-title trainer">David Thompson</h5>
-                                        <p class="card-text trainercourse">Digital Marketing</p>
+                                <div className="card">
+                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-9.webp" className="card-img-top" />
+                                    <div className="card-body">
+                                        <h5 className="card-title trainer">David Thompson</h5>
+                                        <p className="card-text trainercourse">Digital Marketing</p>
                                         <p className="card-text text-secondary fs-6">Digital Marketing involves promoting products or services through online platforms to reach and engage target audiences.</p>
                                         <div className=" card-text d-flex studrate">
                                             <div className="text-center studcen">

@@ -74,7 +74,7 @@ export function Instructors() {
 
                     <div className="container mt-5 mb-5">
                         <div className="row">
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-2.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -103,7 +103,7 @@ export function Instructors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-7.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -132,7 +132,7 @@ export function Instructors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-4.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -161,7 +161,7 @@ export function Instructors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-9.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -192,7 +192,7 @@ export function Instructors() {
                             </div>
                         </div>
                         <div className="row  mt-4">
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-6.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -221,7 +221,7 @@ export function Instructors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-1.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -250,7 +250,7 @@ export function Instructors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-8.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -279,7 +279,7 @@ export function Instructors() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col">
+                            <div className="col-lg-3 col-md-6 col-12 mb-4">
                                 <div class="card sarapro rounded-4">
                                     <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/teacher-10.webp" class="card-img-top rounded-top-4" />
                                     <div class="card-body">
@@ -318,7 +318,7 @@ export function Instructors() {
                     <footer className="container">
                         <div className="">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-lg-6 col-md-12 col-12 mb-4">
                                     <p className="navbarbrand">Learner</p>
                                     <p className="leaknow">A learner is someone who actively seeks knowledge, skills, or understanding through study or experience.They embrace curiosity and growth, continuously evolving through education and practice.</p>
                                     <div className="d-flex">
@@ -328,7 +328,7 @@ export function Instructors() {
                                         <p className="iconfoot ms-3"><FontAwesomeIcon icon={faLinkedin} className="ms-3" /></p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Useful Links</p>
                                     <div className="linkuse">
                                         <p>Home</p>
@@ -338,7 +338,7 @@ export function Instructors() {
                                         <p>Privacy policy</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Our Services</p>
                                     <div className="linkuse">
                                         <p>Web Design</p>
@@ -348,7 +348,7 @@ export function Instructors() {
                                         <p>Graphic Design</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Contact Us</p>
                                     <div className="linkuse">
                                         <p>A108 Adam Street<br />New York, NY 535022<br />United States</p>

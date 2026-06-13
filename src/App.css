@@ -1013,7 +1013,7 @@
 }
 
 .abhom2 {
-  margin-top: 225px !important;
+  margin-top: 100px !important;
 }
 
 .adus {
@@ -1052,11 +1052,7 @@
 
 .ourmission {
   align-content: center;
-  /* border: 2px solid white; */
-  height: 300px;
-  width: 400px;
-  box-shadow: 0px 0px 2px rgb(244, 244, 244),
-    inset 0px 0px 2px rgb(244, 244, 244);
+  min-height: 300px;
   transition: 0.2s ease;
 }
 
@@ -1065,13 +1061,15 @@
 }
 
 .icontask {
-  align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e1ecfd;
   color: rgb(44, 102, 134);
   height: 80px;
   width: 80px;
-  border-radius: 80px;
-  margin-left: 165px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
 }
 
 .icontask:hover {
@@ -1111,9 +1109,11 @@
 .filter {
   box-shadow: 2px 2px 4px silver;
   border: 2px solid white;
-  height: 690px;
-  width: 400px;
+  min-height: 690px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 15px;
+  margin: 0 auto 30px auto;
 }
 
 .line4 {
@@ -1141,7 +1141,7 @@
 
 .line5 {
   height: 1px;
-  width: 383px;
+  width: 100%;
   background-color: silver;
 }
 
@@ -1387,4 +1387,429 @@
   padding-bottom: 20px;
   font-family: sans-serif;
   font-size: 12px;
+}
+
+/* ===== RESPONSIVE FIX ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .navbar-collapse {
+    margin-left: auto !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+
+  .collapse,
+  .navbar-collapse,
+  .navbarlin,
+  .navbarlin1,
+  .navbarlin2 {
+    margin-left: 0 !important;
+  }
+
+  .navlink1 {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  .enroll1 {
+    margin-top: 10px;
+  }
+
+  .wallpaper {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+  }
+
+  .blur {
+    height: 650px;
+  }
+
+  .left {
+    margin-left: 30px;
+  }
+
+  .transform {
+    margin-top: 120px;
+    font-size: 42px;
+  }
+
+  .discover {
+    font-size: 18px;
+  }
+
+  .homeimg,
+  .web,
+  .ui,
+  .digital {
+    display: none;
+  }
+
+  .featured,
+  .instructors {
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .img1 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .cash {
+    margin-left: auto;
+  }
+
+  .line2,
+  .enroll2 {
+    width: 100%;
+  }
+
+  .userstud {
+    margin-left: auto;
+  }
+
+  .abhom1,
+  .abhom2 {
+    margin-top: 40px !important;
+  }
+
+  .empower {
+    font-size: 32px;
+  }
+
+  .filter {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .selectopt {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
+  .sarapro {
+    width: 100%;
+    height: auto;
+  }
+
+  .sarahrat,
+  .sarbrand {
+    margin-left: auto !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbarbrand {
+    font-size: 28px !important;
+  }
+
+  .wallpaper {
+    height: 620px;
+  }
+
+  .blur {
+    height: 620px;
+  }
+
+  .left {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .transform {
+    margin-top: 100px;
+    font-size: 34px;
+  }
+
+  .discover {
+    font-size: 16px;
+  }
+
+  .number,
+  .student,
+  .certified {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .num {
+    font-size: 32px;
+  }
+
+  .cert {
+    width: 100%;
+  }
+
+  .featured,
+  .instructors {
+    font-size: 25px;
+  }
+
+  .imgcard {
+    margin-top: 40px;
+  }
+
+  .row>.col,
+  .row>.col-2,
+  .row>.col-3,
+  .row>.col-4,
+  .row>.col-6,
+  .row>.col-8 {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .computer,
+  .business,
+  .design,
+  .health,
+  .languages,
+  .science,
+  .marketing,
+  .finance,
+  .photography,
+  .music,
+  .engineering,
+  .law,
+  .culinary,
+  .sports,
+  .writing,
+  .psychology,
+  .environment,
+  .communication {
+    width: 100%;
+    height: auto;
+    padding: 25px 10px;
+  }
+
+  .iconc,
+  .iconb,
+  .icond,
+  .iconh,
+  .iconla,
+  .icons,
+  .iconma,
+  .iconf,
+  .iconp,
+  .iconmu,
+  .icone,
+  .iconle,
+  .iconcu,
+  .iconsp,
+  .iconw,
+  .iconps,
+  .iconenv,
+  .iconcom {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .filter {
+    width: 100%;
+    height: auto;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  .input-wrapper input {
+    width: 100%;
+  }
+
+  .enroll3 {
+    width: 100%;
+  }
+
+  .ratstu {
+    justify-content: space-around;
+  }
+
+  .sturat,
+  .sarahrat {
+    margin-left: 0 !important;
+  }
+
+  .sarbrand {
+    margin-left: 20px !important;
+  }
+
+  .foot {
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+  .foot .row {
+    text-align: center;
+  }
+}
+
+  .iconfoot {
+    margin: 10px auto;
+  }
+
+  .infoot {
+    margin-top: 30px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .transform {
+    font-size: 28px;
+  }
+
+  .discover {
+    font-size: 14px;
+  }
+
+  .num {
+    font-size: 26px;
+  }
+
+  .empower {
+    font-size: 28px;
+  }
+
+  .sarah {
+    font-size: 22px;
+  }
+}
+
+/* Fix instructor/profile images inside course cards */
+.namimg img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover;
+}
+
+/* Fix course card top images */
+.img1 .card-img-top {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+  .yearofno,
+  .yearofexper {
+    text-align: center;
+  }
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.about {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.filter {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.filter * {
+  box-sizing: border-box;
+}
+
+.filter {
+  padding: 20px;
+  overflow: hidden;
+}
+
+.filter .ms-4 {
+  margin-left: 0 !important;
+}
+
+.line4 {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .number {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .student {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .certified {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .web,
+  .digital,
+  .ui {
+    display: none;
+  }
+}
+
+.number,
+.student,
+.certified {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+
+  .number,
+  .student {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .num,
+  .stu {
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  .certified {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cert {
+    margin-left: 0 !important;
+  }
 }
