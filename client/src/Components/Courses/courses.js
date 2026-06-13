@@ -8,32 +8,32 @@ export function Courses() {
     return (
         <>
             <div className="courses">
-                <nav class="navbar navbar-expand-lg p-3 sticky-top" id="navbar">
-                    <div class="container">
-                        <a class="navbar-brand navbarbrand" href="#">Learner<div></div></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg p-3 sticky-top" id="navbar">
+                    <div className="container">
+                        <a className="navbar-brand navbarbrand" href="#">Learner<div></div></a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active  navlink1" aria-current="page" href="/">Home</a>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link active  navlink1" aria-current="page" href="/">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="/about">About</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/about">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="">Courses</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="">Courses</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="/instructor">Instructors</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/instructor">Instructors</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle  navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle  navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         More Pages
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a className="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -47,22 +47,22 @@ export function Courses() {
                 {/* courseshom */}
 
                 <div>
-                    <nav class="navbar navbar-expand-lg p-3" id="courseshom">
-                        <div class="container">
-                            <a class="navbar-brand navbarbrand1" href="#">Courses<div></div></a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                    <nav className="navbar navbar-expand-lg p-3" id="courseshom">
+                        <div className="container">
+                            <a className="navbar-brand navbarbrand1" href="#">Courses<div></div></a>
+                            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse navbarlin1" id="navbarSupportedContent">
-                                <ul class="navbar-nav mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                            <div className="collapse navbar-collapse navbarlin1" id="navbarSupportedContent">
+                                <ul className="navbar-nav mb-2 mb-lg-0">
+                                    <li className="nav-item">
+                                        <a className="nav-link" aria-current="page" href="/">Home</a>
                                     </li>
                                     <li>
                                         <p className="nav-link">/</p>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="">Courses</a>
+                                    <li className="nav-item">
+                                        <a className="nav-link" href="">Courses</a>
                                     </li>
                                 </ul>
                             </div>
@@ -73,48 +73,50 @@ export function Courses() {
 
                     <div className="container mt-5">
                         <div className="row">
-                            <div className="col-3 filter">
-                                <div className=" ms-4">
-                                    <p className="mt-3 fs-5 fw-bold">Filter Courses</p>
-                                    <div className="line line4"></div>
-                                </div>
-                                <div className="mt-3  ms-4">
-                                    <lable className="catefil">Category</lable><br />
-                                    <input type="checkbox" className="mt-3" /> <span className="catcheck">All Categories</span><br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Programming</span>  <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Design</span>  <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Business</span>  <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Marketing</span>
-                                </div>
-                                <div className="mt-3 ms-4">
-                                    <lable className="catefil">Level</lable><br />
-                                    <input type="checkbox" className="mt-3" /> <span className="catcheck">All Levels</span> <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Beginner</span><br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Intermediate</span><br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Advanced</span>
-                                </div>
-                                <div className="mt-3 ms-4">
-                                    <lable className="catefil">Duration</lable><br />
-                                    <input type="checkbox" className="mt-3" /> <span className="catcheck">Under 5 hours</span> <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">5-20 hours</span> <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">20+ hours</span>
-                                </div>
-                                <div className="mt-3 ms-4">
-                                    <lable className="catefil">Price</lable><br />
-                                    <input type="checkbox" className="mt-3" /> <span className="catcheck">Free</span> <br />
-                                    <input type="checkbox" className="mt-2" /> <span className="catcheck">Paid</span>
+                            <div className="col-lg-3 col-md-12 col-12 mb-4">
+                                <div className="filter">
+                                    <div className=" ms-4">
+                                        <p className="mt-3 fs-5 fw-bold">Filter Courses</p>
+                                        <div className="line line4"></div>
+                                    </div>
+                                    <div className="mt-3  ms-4">
+                                        <lable className="catefil">Category</lable><br />
+                                        <input type="checkbox" className="mt-3" /> <span className="catcheck">All Categories</span><br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Programming</span>  <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Design</span>  <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Business</span>  <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Marketing</span>
+                                    </div>
+                                    <div className="mt-3 ms-4">
+                                        <lable className="catefil">Level</lable><br />
+                                        <input type="checkbox" className="mt-3" /> <span className="catcheck">All Levels</span> <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Beginner</span><br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Intermediate</span><br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Advanced</span>
+                                    </div>
+                                    <div className="mt-3 ms-4">
+                                        <lable className="catefil">Duration</lable><br />
+                                        <input type="checkbox" className="mt-3" /> <span className="catcheck">Under 5 hours</span> <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">5-20 hours</span> <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">20+ hours</span>
+                                    </div>
+                                    <div className="mt-3 ms-4">
+                                        <lable className="catefil">Price</lable><br />
+                                        <input type="checkbox" className="mt-3" /> <span className="catcheck">Free</span> <br />
+                                        <input type="checkbox" className="mt-2" /> <span className="catcheck">Paid</span>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="col-8 ms-5">
+                            <div className="col-lg-9 col-md-12 col-12">
                                 <div className=" row">
-                                    <div className="col-7">
+                                    <div className="col-lg-7 col-md-12 col-12 mb-3">
                                         <form className="input-wrapper">
                                             <p className="ms-3 mt-2"><FontAwesomeIcon icon={faMagnifyingGlass} className="iconmagni" /></p>
                                             <input type="search" placeholder="Search course..." className="form-control" />
                                         </form>
                                     </div>
-                                    <div className="col-4 ms-4">
+                                    <div className="col-lg-4 col-md-12 col-12">
                                         <select className="ms-5 form-control selectopt">
                                             <option>Sort by:Most Popular</option>
                                             <option>Newest First</option>
@@ -127,10 +129,10 @@ export function Courses() {
 
 
                                 <div className="row mt-4">
-                                    <div className="col-6">
-                                        <div class="card rounded-4">
-                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-3.webp" height={260} class="card-img-top rounded-top-4" />
-                                            <div class="card-body">
+                                    <div className="col-lg-6 col-md-6 col-12 mb-4">
+                                        <div className="card rounded-4">
+                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-3.webp" height={260} className="card-img-top rounded-top-4" />
+                                            <div className="card-body">
                                                 <div className="d-flex">
                                                     <p className="prointer">Programming</p>
                                                     <p className="ms-3 interpro">INTERMEDIATE</p>
@@ -166,10 +168,10 @@ export function Courses() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6">
-                                        <div class="card rounded-4">
-                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-7.webp" class="card-img-top rounded-top-4" height={260} />
-                                            <div class="card-body">
+                                    <div className="col-lg-6 col-md-6 col-12 mb-4">
+                                        <div className="card rounded-4">
+                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-7.webp" className="card-img-top rounded-top-4" height={260} />
+                                            <div className="card-body">
                                                 <div className="d-flex">
                                                     <p className="prointer">Design</p>
                                                     <p className="ms-3 interpro">Beginner</p>
@@ -208,10 +210,10 @@ export function Courses() {
                                 </div>
                                 <div>
                                     <div className="row mt-4">
-                                        <div className="col-6">
-                                            <div class="card rounded-4">
-                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-12.webp" class="card-img-top rounded-top-4" height={260} />
-                                                <div class="card-body">
+                                        <div className="col-lg-6 col-md-6 col-12 mb-4">
+                                            <div className="card rounded-4">
+                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-12.webp" className="card-img-top rounded-top-4" height={260} />
+                                                <div className="card-body">
                                                     <div className="d-flex">
                                                         <p className="prointer">Business</p>
                                                         <p className="ms-3 interpro">Beginner</p>
@@ -247,10 +249,10 @@ export function Courses() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-6">
-                                            <div class="card rounded-4">
-                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-5.webp" class="card-img-top rounded-top-4" height={260} />
-                                                <div class="card-body">
+                                        <div className="col-lg-6 col-md-6 col-12 mb-4">
+                                            <div className="card rounded-4">
+                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-5.webp" className="card-img-top rounded-top-4" height={260} />
+                                                <div className="card-body">
                                                     <div className="d-flex">
                                                         <p className="prointer">Programming</p>
                                                         <p className="ms-3 interpro">Advanced</p>
@@ -290,10 +292,10 @@ export function Courses() {
                                 </div>
                                 <div>
                                     <div className="row mt-4 mb-5">
-                                        <div className="col-6">
-                                            <div class="card rounded-4">
-                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-9.webp" class="card-img-top rounded-top-4" height={260} />
-                                                <div class="card-body">
+                                        <div className="col-lg-6 col-md-6 col-12 mb-4">
+                                            <div className="card rounded-4">
+                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-9.webp" className="card-img-top rounded-top-4" height={260} />
+                                                <div className="card-body">
                                                     <div className="d-flex">
                                                         <p className="prointer">Marketing</p>
                                                         <p className="ms-3 interpro">Intermediate</p>
@@ -329,10 +331,10 @@ export function Courses() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-6">
-                                            <div class="card rounded-4">
-                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-14.webp" class="card-img-top rounded-top-4" height={260} />
-                                                <div class="card-body">
+                                        <div className="col-lg-6 col-md-6 col-12 mb-4">
+                                            <div className="card rounded-4">
+                                                <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/courses-14.webp" className="card-img-top rounded-top-4" height={260} />
+                                                <div className="card-body">
                                                     <div className="d-flex">
                                                         <p className="prointer">Design</p>
                                                         <p className="ms-3 interpro">Intermediate</p>
@@ -381,7 +383,7 @@ export function Courses() {
                     <footer className="container">
                         <div className="">
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-lg-6 col-md-6 col-12 mb-4">
                                     <p className="navbarbrand">Learner</p>
                                     <p className="leaknow">A learner is someone who actively seeks knowledge, skills, or understanding through study or experience.They embrace curiosity and growth, continuously evolving through education and practice.</p>
                                     <div className="d-flex">
@@ -391,7 +393,7 @@ export function Courses() {
                                         <p className="iconfoot ms-3"><FontAwesomeIcon icon={faLinkedin} className="ms-3" /></p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Useful Links</p>
                                     <div className="linkuse">
                                         <p>Home</p>
@@ -401,7 +403,7 @@ export function Courses() {
                                         <p>Privacy policy</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Our Services</p>
                                     <div className="linkuse">
                                         <p>Web Design</p>
@@ -411,7 +413,7 @@ export function Courses() {
                                         <p>Graphic Design</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Contact Us</p>
                                     <div className="linkuse">
                                         <p>A108 Adam Street<br />New York, NY 535022<br />United States</p>

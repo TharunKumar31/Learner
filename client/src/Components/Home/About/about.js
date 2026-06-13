@@ -10,36 +10,36 @@ export function About() {
     return (
         <>
             <div className="about">
-                <nav class="navbar navbar-expand-lg p-3 sticky-top" id="navbar">
-                    <div class="container">
-                        <a class="navbar-brand navbarbrand" href="#">Learner<div></div></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                <nav className="navbar navbar-expand-lg p-3 sticky-top" id="navbar">
+                    <div className="container">
+                        <a className="navbar-brand navbarbrand" href="#">Learner<div></div></a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active  navlink1" aria-current="page" href="/">Home</a>
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link active  navlink1" aria-current="page" href="/">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="">About</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/about">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="/courses">Courses</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/courses">Courses</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link  navlink1" href="/instructor">Instructors</a>
+                                <li className="nav-item">
+                                    <a className="nav-link  navlink1" href="/instructor">Instructors</a>
                                 </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle  navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle  navlink1" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         More Pages
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
+                                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a className="dropdown-item" href="/enrolldetails">EnrollDetails</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <div className="">
+                            <div>
                                 <Link to={'/enroll'}><button className="btn btn-lg rounded-pill enroll1">Enroll Now</button></Link>
                             </div>
                         </div>
@@ -49,22 +49,19 @@ export function About() {
                 {/* abouthom */}
 
                 <div>
-                    <nav class="navbar navbar-expand-lg p-3" id="abouthom">
-                        <div class="container">
-                            <a class="navbar-brand navbarbrand1" href="#">About</a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse navbarlin" id="navbarSupportedContent">
-                                <ul class="navbar-nav mb-2 mb-lg-0 ">
-                                    <li class="nav-item">
-                                        <a class="nav-link navlink2" aria-current="page" href="/">Home</a>
+                    <nav className="navbar navbar-expand-lg p-3" id="abouthom">
+                        <div className="container">
+                            <a className="navbar-brand navbarbrand1" href="#">About</a>
+                            <div className="collapse navbar-collapse navbarlin" id="navbarSupportedContent">
+                                <ul className="navbar-nav mb-2 mb-lg-0 ">
+                                    <li className="nav-item">
+                                        <a className="nav-link navlink2" aria-current="page" href="/">Home</a>
                                     </li>
                                     <li>
                                         <p className="nav-link">/</p>
                                     </li>
                                     <li>
-                                        <a class="nav-link">About</a>
+                                        <a className="nav-link">About</a>
                                     </li>
                                 </ul>
                             </div>
@@ -76,27 +73,27 @@ export function About() {
 
                     <div className="container">
                         <div className="row">
-                            <div className="col abhom1">
+                            <div className="col-lg-6 col-md-12 col-12 abhom1 mb-4">
                                 <div>
-                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/education-square-2.webp" className="rounded-4" height={625} width={625} />
+                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/education-square-2.webp" className="img-fluid rounded-4" />
                                 </div>
                             </div>
-                            <div className="col abhom2">
+                            <div className="col-lg-6 col-md-12 col-12 abhom2">
                                 <p className="adus">ABOUT US</p>
                                 <p className="empower">Empowering Future Leaders Through Quality Education</p>
                                 <p className="empower1 mt-4">"Empowering Future Leaders Through Quality Education" emphasizes the transformative power of learning. By fostering critical thinking, innovation, and confidence, quality education equips students to lead with purpose. It lays the foundation for building responsible, skilled, and visionary leaders of tomorrow.</p>
-                                <div className="d-flex mt-5">
-                                    <div className="">
+                                <div className="row mt-5 text-center">
+                                    <div>
                                         <p className="yearofno">15</p>
                                         <p className="yearofexper">Years of Experience</p>
                                     </div>
-                                    <div className="">
-                                        <p className="yearofno ms-5">200+</p>
-                                        <p className="yearofexper ms-5">Expert Instructors</p>
+                                    <div>
+                                        <p className="yearofno">200+</p>
+                                        <p className="yearofexper">Expert Instructors</p>
                                     </div>
                                     <div>
-                                        <p className="yearofno ms-5">50k+</p>
-                                        <p className="yearofexper ms-5">Students Worldwide</p>
+                                        <p className="yearofno">50k+</p>
+                                        <p className="yearofexper">Students Worldwide</p>
                                     </div>
                                 </div>
                             </div>
@@ -106,21 +103,21 @@ export function About() {
                     {/* ourtasks */}
 
                     <div className=" container ourtasks text-center">
-                        <div className="d-flex text-center">
-                            <div className=" ourmission">
+                        <div className="row text-center">
+                            <div className="col-lg-4 col-md-4 col-12 ourmission mb-4">
                                 <p className="icontask"><FontAwesomeIcon icon={faBullseye} size="2xl" /></p>
                                 <p className="fs-4 fw-bold">Our Mission</p>
-                                <p className="fs-6 text-secondary">Our mission is to provide inclusive, high-quality education that empowers individuals to<br />achieve their full potential.</p>
+                                <p className="fs-6 text-secondary">Our mission is to provide inclusive, high-quality education that empowers individuals to achieve their full potential.</p>
                             </div>
-                            <div className="ms-5  ourmission">
+                            <div className="col-lg-4 col-md-4 col-12 ourmission mb-4">
                                 <p className="icontask"><FontAwesomeIcon icon={faEye} size="2xl" /></p>
                                 <p className="fs-4 fw-bold">Our Vision</p>
-                                <p className="fs-6 text-secondary">Our vision is to shape a future where every learner<br />becomes a confident, compassionate,<br />and capable leader.</p>
+                                <p className="fs-6 text-secondary">Our vision is to shape a future where every learner becomes a confident, compassionate, and capable leader.</p>
                             </div>
-                            <div className=" ms-5 ourmission">
+                            <div className="col-lg-4 col-md-4 col-12 ourmission mb-4">
                                 <p className="icontask"><FontAwesomeIcon icon={faAward} size="2xl" /></p>
                                 <p className="fs-4 fw-bold">Our Values</p>
-                                <p className="fs-6 text-secondary">Our values center on integrity, innovation, inclusivity, collaboration, and a commitment to excellence<br />in everything we do.</p>
+                                <p className="fs-6 text-secondary">Our values center on integrity, innovation, inclusivity, collaboration, and a commitment to excellence in everything we do.</p>
                             </div>
                         </div>
                     </div>
@@ -129,24 +126,24 @@ export function About() {
 
                     <div className="container abbottom">
                         <div className="row mt-5">
-                            <div className="col">
+                            <div className="col-lg-6 col-md-12 col-12 mb-4">
                                 <div className="row">
-                                    <div className="col">
+                                    <div className="col-lg-6 col-md-12 col-12 mb-4">
                                         <div>
-                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/education-1.webp" height={200} width={300} />
+                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/education-1.webp" className="img-fluid rounded-4" />
                                         </div>
                                     </div>
-                                    <div className="col">
+                                    <div className="col-lg-6 col-md-12 col-12 mb-4">
                                         <div>
-                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/students-3.webp" height={200} width={300} />
+                                            <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/students-3.webp" className="img-fluid rounded-4" />
                                         </div>
                                     </div>
                                 </div>
                                 <div className="mt-5">
-                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/campus-8.webp" height={400} width={630} />
+                                    <img src="https://bootstrapmade.com/content/demo/Learner/assets/img/education/campus-8.webp" className="img-fluid rounded-4" />
                                 </div>
                             </div>
-                            <div className="col mt-5">
+                            <div className="col-lg-6 col-md-12 col-12 mt-5">
                                 <div>
                                     <p className="adus">WHY CHOOSE US</p>
                                     <p className="empower">Transforming Education for a Better Tomorrow</p>
@@ -171,9 +168,9 @@ export function About() {
 
                 <div className="foot">
                     <footer className="container">
-                        <div className="">
+                        <div>
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-lg-6 col-md-12 col-12 mb-4">
                                     <p className="navbarbrand">Learner</p>
                                     <p className="leaknow">A learner is someone who actively seeks knowledge, skills, or understanding through study or experience.They embrace curiosity and growth, continuously evolving through education and practice.</p>
                                     <div className="d-flex">
@@ -183,7 +180,7 @@ export function About() {
                                         <p className="iconfoot ms-3"><FontAwesomeIcon icon={faLinkedin} className="ms-3" /></p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Useful Links</p>
                                     <div className="linkuse">
                                         <p>Home</p>
@@ -193,7 +190,7 @@ export function About() {
                                         <p>Privacy policy</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Our Services</p>
                                     <div className="linkuse">
                                         <p>Web Design</p>
@@ -203,7 +200,7 @@ export function About() {
                                         <p>Graphic Design</p>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-lg-2 col-md-4 col-12 mb-4">
                                     <p className="uselink">Contact Us</p>
                                     <div className="linkuse">
                                         <p>A108 Adam Street<br />New York, NY 535022<br />United States</p>

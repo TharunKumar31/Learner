@@ -97,13 +97,13 @@ export function EnrollUpdate() {
             <div>
                 <form onSubmit={enrollupdate}>
                     <div className="row">
-                        <div className="col ms-4">
+                        <div className="col-lg-6 col-md-6 col-12 mb-3">
                             <label>First Name*</label>
                             <input type="text" id="fname" className="form-control" value={fname} onChange={(e) => setFname(e.target.value)} />
                             <label>Email Address*</label>
                             <input type="text" id="email" className="form-control" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
-                        <div className="col me-4">
+                        <div className="col-lg-6 col-md-6 col-12 mb-3">
                             <label>Last Name*</label>
                             <input type="text" id="lname" className="form-control" value={lname} onChange={(e) => setLname(e.target.value)} />
                             <label>Phone Number*</label>
@@ -125,7 +125,7 @@ export function EnrollUpdate() {
                     </div>
 
                     <div className="row">
-                        <div className="col ms-4">
+                        <div className="col-lg-6 col-md-6 col-12 mb-3">
                             <label>Education Level</label>
                             <select className="form-select" id="education" value={education} onChange={(e) => setEducation(e.target.value)}>
                                 <option value="">Select your education level...</option>
@@ -137,7 +137,7 @@ export function EnrollUpdate() {
                                 <option>Other</option>
                             </select>
                         </div>
-                        <div className="col me-4">
+                        <div className="col-lg-6 col-md-6 col-12 mb-3">
                             <label>Experience Level</label>
                             <select className="form-select" id="experience" value={experience} onChange={(e) => setExperience(e.target.value)}>
                                 <option value="">Select your experience...</option>
@@ -156,7 +156,7 @@ export function EnrollUpdate() {
                         </div>
                     </div>
 
-                    <div className="col ms-4">
+                    <div className="col-lg-6 col-md-6 col-12 mb-3">
                         <label>Preferred Learning Schedule</label>
                         <select className="form-select" id="learn" value={learn} onChange={(e) => setLearn(e.target.value)}>
                             <option value="">Select schedule...</option>
@@ -166,7 +166,7 @@ export function EnrollUpdate() {
                         </select>
                     </div>
                     <div className="mt-3">
-                        <button type="submit" value="enroll" className="enroll3 ms-4 btn ">Enroll now</button>
+                        <button type="submit" value="enroll" className="enroll3 btn ">Enroll now</button>
                     </div>
                 </form>
             </div>
