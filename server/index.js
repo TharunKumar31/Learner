@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express")
 const cors = require("cors")
 const bodyparser = require("body-parser")
@@ -7,104 +9,109 @@ connect.use(cors())
 connect.use(bodyparser.json())
 connect.use(express.json())
 connect.use(express.static('public'))
-connect.use(bodyparser.urlencoded({extended:true}))
-let databaseconnection=mysql.createConnection({
-    host:"localhost",
-    port:3306,
-    user:"root",
-    password:"Kumar@2004",
-    database:"enroll"
-
+connect.use(bodyparser.urlencoded({ extended: true }))
+let databaseconnection = mysql.createConnection({
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 })
 
-databaseconnection.connect(function(error){
-    if(error){
+databaseconnection.connect(function (error) {
+    if (error) {
         console.log(error)
     }
-    else{
+    else {
         console.log("database connected")
     }
 })
 
+connect.get("/", (req, res) => {
+    res.send("Learner Backend Running");
+});
+
 // insert data in enroll_now table from enroll
-connect.post('/enroll',(request,response)=>{
-    let{fname,lname,email,phoneno,selectcourse,education,experience,motivate,learn}=request.body
-    let sql='insert into enroll_now(fname,lname,email,phoneno,selectcourse,education,experience,motivate,learn) values(?,?,?,?,?,?,?,?,?)'
-    databaseconnection.query(sql,[fname,lname,email,phoneno,selectcourse,education,experience,motivate,learn],(error,result)=>{
-        if(error){
-            response.send({"status":"error"})
+connect.post('/enroll', (request, response) => {
+    let { fname, lname, email, phoneno, selectcourse, education, experience, motivate, learn } = request.body
+    let sql = 'insert into enroll_now(fname,lname,email,phoneno,selectcourse,education,experience,motivate,learn) values(?,?,?,?,?,?,?,?,?)'
+    databaseconnection.query(sql, [fname, lname, email, phoneno, selectcourse, education, experience, motivate, learn], (error, result) => {
+        if (error) {
+            response.send({ "status": "error" })
             console.log(error)
         }
-        else{
-            response.send({"status":"success"})
+        else {
+            response.send({ "status": "success" })
             console.log(" data added ok")
         }
     })
 })
 
 // enroll_now all data
-connect.get('/enrolldetails',(request,response)=>{
-    let sql='select * from enroll_now'
-    databaseconnection.query(sql,(error,result)=>{
-        if(error) {
+connect.get('/enrolldetails', (request, response) => {
+    let sql = 'select * from enroll_now'
+    databaseconnection.query(sql, (error, result) => {
+        if (error) {
             response.send(error)
             console.log(error)
         }
-        else{
+        else {
             response.send(result)
         }
     })
 })
 
 // Single enrolldetails
-connect.get('/singleenroll/:id',(request,response)=>{
-    let {id}=request.params
-    let sql='select * from enroll_now where id=?'
-    databaseconnection.query(sql,[id],(error,result)=>{
-        if(error){
+connect.get('/singleenroll/:id', (request, response) => {
+    let { id } = request.params
+    let sql = 'select * from enroll_now where id=?'
+    databaseconnection.query(sql, [id], (error, result) => {
+        if (error) {
             response.send(error)
             console.log(error)
         }
-        else{
+        else {
             response.send(result)
         }
     })
 })
 
 // update enroll details
-connect.put('/enrollupdate/:id',(request,response)=>{
-    let {id}=request.params
-    let {fname,lname,email,phoneno,selectcourse,education,experience,motivate,learn} = request.body
-    let sql='update enroll_now set fname=?,lname=?,email=?,phoneno=?,selectcourse=?,education=?,experience=?,motivate=?,learn=? where id=?'
-    databaseconnection.query(sql,[fname,lname,email,phoneno,selectcourse,education,experience,motivate,learn,id],(error,result)=>{
-        if(error){
-            response.send({"status":"not_updated"})
+connect.put('/enrollupdate/:id', (request, response) => {
+    let { id } = request.params
+    let { fname, lname, email, phoneno, selectcourse, education, experience, motivate, learn } = request.body
+    let sql = 'update enroll_now set fname=?,lname=?,email=?,phoneno=?,selectcourse=?,education=?,experience=?,motivate=?,learn=? where id=?'
+    databaseconnection.query(sql, [fname, lname, email, phoneno, selectcourse, education, experience, motivate, learn, id], (error, result) => {
+        if (error) {
+            response.send({ "status": "not_updated" })
             console.log(error)
         }
-        else{
-            response.send({"status":"success","id":id})
+        else {
+            response.send({ "status": "success", "id": id })
             console.log("ok")
         }
     })
 })
 
 // delete the enroll
-connect.post('/delete',(request,response)=>{
-    let id=request.body.id
-    let sql='delete from enroll_now where id=?'
-    databaseconnection.query(sql,[id],(error,result)=>{
-        if(error){
-            response.send({"status":"error"})
+connect.post('/delete', (request, response) => {
+    let id = request.body.id
+    let sql = 'delete from enroll_now where id=?'
+    databaseconnection.query(sql, [id], (error, result) => {
+        if (error) {
+            response.send({ "status": "error" })
             console.log(error)
         }
-        else{
-            response.send({"status":"success"})
+        else {
+            response.send({ "status": "deleted" })
             console.log("ok")
         }
     })
 })
 
 // database connection
-connect.listen(5831,()=>{
-    console.log("your sever is running in port 5831")
+const PORT = process.env.PORT || 5831;
+
+connect.listen(PORT, () => {
+    console.log(`your server is running on port ${PORT}`);
 })
