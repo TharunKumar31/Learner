@@ -11,15 +11,15 @@ connect.use(express.json())
 connect.use(express.static('public'))
 connect.use(bodyparser.urlencoded({ extended: true }))
 let databaseconnection = mysql.createConnection({
-    host: process.env.MYSQLHOST,
-    port: process.env.MYSQLPORT,
-    user: process.env.MYSQLUSER,
-    password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQLDATABASE
+    host: process.env.MYSQL_HOST,
+    port: process.env.MYSQL_PORT,
+    user: process.env.MYSQL_USER,
+    password: process.env.MYSQL_PASSWORD,
+    database: process.env.MYSQL_DATABASE
 })
 
-console.log("HOST:", process.env.MYSQLHOST);
-console.log("DB:", process.env.MYSQLDATABASE);
+console.log("HOST:", process.env.MYSQL_HOST);
+console.log("DB:", process.env.MYSQL_DATABASE);
 
 databaseconnection.connect(function (error) {
     if (error) {
